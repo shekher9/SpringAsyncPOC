@@ -1,0 +1,13 @@
+server:
+  port: 4002
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ribd
+    username: postgres
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate-dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
